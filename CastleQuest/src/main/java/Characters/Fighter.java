@@ -1,9 +1,11 @@
 package Characters;
 
-import Behaviours.IActionable;
+
+
 import Behaviours.IWeaponable;
 
-public class Fighter extends Player implements IActionable{
+public class Fighter extends Player{
+
     private IWeaponable weapon;
 
     public Fighter(String name, int healthPoints, IWeaponable weapon){

@@ -24,12 +24,14 @@ public abstract class Player implements ITargetable{
         return healthPoints;
     }
 
-    public void takeDamage(int damage){
+    public String takeDamage(int damage){
         healthPoints -= damage;
+        return "Ouch";
     }
 
-    public void beHealed(int health){
+    public String beHealed(int health){
         healthPoints += health;
+        return "Sigh of relief ahhhhh";
     }
 
     public int completeAction(ITargetable target){

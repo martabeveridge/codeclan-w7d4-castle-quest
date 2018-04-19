@@ -2,8 +2,8 @@ package Behaviours;
 
 public interface ITargetable {
 
-    public String takeDamage();
+    public String takeDamage(int damage);
 
-    public String beHealed();
+    public String beHealed(int health);
 
 }
