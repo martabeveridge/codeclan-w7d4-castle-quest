@@ -34,7 +34,10 @@ public abstract class Player implements ITargetable{
         return "Sigh of relief ahhhhh";
     }
 
-    public int completeAction(ITargetable target){
-        return 0;
+    public ArrayList<ITreasurable> getInventory(){
+        return inventory;
+    }
+
+    public void action(ITargetable target){
     }
 }

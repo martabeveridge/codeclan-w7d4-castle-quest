@@ -2,6 +2,7 @@ package Characters;
 
 
 
+import Behaviours.ITargetable;
 import Behaviours.IWeaponable;
 
 public class Fighter extends Player{
@@ -21,8 +22,8 @@ public class Fighter extends Player{
         weapon = newWeapon;
     }
 
-    public int action(){
-        return (-weapon.wield());
+    public void action(ITargetable target){
+        target.takeDamage(weapon.wield());
     }
 
 }
