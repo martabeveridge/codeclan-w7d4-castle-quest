@@ -43,7 +43,7 @@ public class FighterTest {
     }
 
     @Test
-    public void fighterCanAttach(){
+    public void fighterCanAttack(){
         fighter1.action(dragon1);
         assertEquals(105, dragon1.getHealthPoints());
     }

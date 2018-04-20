@@ -6,4 +6,6 @@ public interface ITargetable {
 
     public String beHealed(int health);
 
+    public String getName();
+
 }

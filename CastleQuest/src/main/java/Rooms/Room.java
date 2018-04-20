@@ -1,8 +1,11 @@
 package Rooms;
 
 import Beasts.Creature;
+import Beasts.Dragon;
 import Behaviours.ITargetable;
+import Characters.Fighter;
 import Characters.Player;
+import Items.Sword;
 
 public class Room {
 
@@ -17,17 +20,14 @@ public class Room {
     }
 
     public ITargetable fightRound(){
-        ITargetable victor = null;
         hero.action(baddie);
         baddie.attack(hero);
         if (hero.getHealthPoints() > baddie.getHealthPoints()){
-            victor = hero;
+            return hero;
         }
         else {
-            victor = baddie;
+            return baddie;
         }
-        return victor;
     }
-
 
 }

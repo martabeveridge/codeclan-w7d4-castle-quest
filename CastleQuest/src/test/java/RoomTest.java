@@ -1,4 +1,5 @@
 import Beasts.Dragon;
+import Behaviours.ITargetable;
 import Characters.Fighter;
 import Items.Sword;
 import Rooms.Room;
@@ -25,4 +26,7 @@ public class RoomTest {
     public void canFightRoundRandom() {
         assertEquals(true,fighter1 == room1.fightRound());
     }
+
+
+
 }
