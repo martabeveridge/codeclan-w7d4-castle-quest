@@ -1,11 +1,8 @@
 package Rooms;
 
 import Beasts.Creature;
-import Beasts.Dragon;
 import Behaviours.ITargetable;
-import Characters.Fighter;
 import Characters.Player;
-import Items.Sword;
 
 public class Room {
 

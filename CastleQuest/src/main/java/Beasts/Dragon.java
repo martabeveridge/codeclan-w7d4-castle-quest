@@ -1,7 +1,5 @@
 package Beasts;
 
-import Behaviours.ITargetable;
-
 public class Dragon extends Creature {
 
     private String flameColour;
@@ -15,7 +13,7 @@ public class Dragon extends Creature {
         return flameColour;
     }
 
-    public void setName(String newColour){
+    public void setFlameColour(String newColour){
         flameColour = newColour;
     }
 
